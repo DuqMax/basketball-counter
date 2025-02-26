@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/index.css">
+        <title>Basketball counter</title>
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h1>Home goals</h1>
+                <div class="panel">
+                    <h1 id="home-score">0</h1>
+                </div>
+                <div class="btn-section">
+                    <button class="btn" id="home1+" onclick="oneHome()">+1</button>
+                    <button class="btn" id="home2+" onclick="twoHome()">+2</button>
+                    <button class="btn" id="home3+" onclick="threeHome()">+3</button>
+                </div>
+            </div>
+            <div class="home-fouls">
+                <h1>Fouls</h1>
+                <div class="panel" id="home-fouls">
+                    <h1>0</h1>
+                </div>
+                <button class="btn" id="hfoul" onclick="onehFoul()">+</button>
+            </div>
+            <h1 id="divisor">X</h1>
+            <div class="guest-fouls">
+                <h1>Fouls</h1>
+                <div class="panel" id="guest-fouls">
+                    <h1>0</h1>
+                </div>
+                <button class="btn" id="gfoul" onclick="onegFoul()">+</button>
+            </div>
+            <div>
+                <h1>Guest goals</h1>
+                <div class="panel">
+                <h1 id="guest-score">0</h1>
+            </div>
+                <div class="btn-section">
+                    <button class="btn" id="guest1+" onclick="oneGuest()">+1</button>
+                    <button class="btn" id="guest2+" onclick="twoGuest()">+2</button>
+                    <button class="btn" id="guest3+" onclick="threeGuest()">+3</button>
+                </div>
+            </div>
+        </div>
+        <script src="assets/js/index.js"></script>
+    </body>
+</html>
